@@ -1,0 +1,11 @@
+version: "3"
+services:
+  mkdocs:
+    image: squidfunk/mkdocs-material
+    container_name: "mkdocs"
+    restart: always
+    ports:
+      - "80:8000"
+    volumes:
+      - /data/mkdocs:/docs
+
